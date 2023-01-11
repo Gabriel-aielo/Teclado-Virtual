@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <!--Meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit= no">
+
+    <!--Css tags
+    ----------------------------------------------------------------------------------------------------------------------------------->
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <!--Bootstrap
+    ----------------------------------------------------------------------------------------------------------------------------------->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--Font awsome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <body class=" bg-dark">
+
+        <div>
+        </div>
+
+        <div class="keyboardBody text-center">
+
+            <div class="subyClassBody">
+
+                <div>
+                    <input disabled="disabled" id="input" type="text">
+                </div>
+
+                <div class="line0">
+                    <button id="btnF1" class="btn56 btnF" onclick="modo(1)"><p>RGB off</p></button>
+                    <button id="btnF2" class="btn57 btnF" onclick="modo(2)"><p>RGB On</p></button>
+                    <button id="btnF3" class="btn58 btnF" onclick="modo(3)"><p>RGB Mode 2</p></button>
+                </div>
+
+                <div class="line1">
+                    <button onclick="caracter('caracterEspecial', '+')" class="btn1 btn1 btnCustom btn_teste"><p>+</p></button>
+                    <button onclick="caracter('numero', 1)" class="btn2 btn2 btnCustom btn_teste"><p>1</p></button>
+                    <button onclick="caracter('numero', 2)" class="btn3 btnCustom btn_teste"><p>2</p></button>
+                    <button onclick="caracter('numero', 3)" class="btn4 btnCustom btn_teste"><p>3</p></button>
+                    <button onclick="caracter('numero', 4)" class="btn5 btnCustom btn_teste"><p>4</p></button>
+                    <button onclick="caracter('numero', 5)" class="btn6 btnCustom btn_teste"><p>5</p></button>
+                    <button onclick="caracter('numero', 6)" class="btn7 btnCustom btn_teste"><p>6</p></button>
+                    <button onclick="caracter('numero', 7)" class="btn8 btnCustom btn_teste"><p>7</p></button>
+                    <button onclick="caracter('numero', 8)" class="btn9 btnCustom btn_teste"><p>8</p></button>
+                    <button onclick="caracter('numero', 9)" class="btn10 btnCustom btn_teste"><p>9</p></button>
+                    <button onclick="caracter('numero', 0)" class="btn11 btnCustom btn_teste"><p>0</p></button>
+                    <button onclick="caracter('caracterEspecial', '-')" class="btn12 btnCustom btn_teste"><p>-</p></button>
+                    <button onclick="caracter('caracterEspecial', '=')" class="btn13 btnCustom btn_teste"><p>=</p></button>
+                    <button onclick="caracter('caracterEspecial', '')" class="btn14 btnCustom btn_teste"><p><i class="fas fa-backspace"></i></p></i></button>
+                </div>
+
+                <div class="line2">
+                    <button onclick="caracter('letra', 'q')" class="btn15 btnCustom btn_teste"><p>q</p></button>
+                    <button onclick="caracter('letra', 'w')" class="btn16 btnCustom btn_teste"><p>w</p></button>
+                    <button onclick="caracter('letra', 'e')" class="btn17 btnCustom btn_teste"><p>e</p></button>
+                    <button onclick="caracter('letra', 'r')" class="btn18 btnCustom btn_teste"><p>r</p></button>
+                    <button onclick="caracter('letra', 't')" class="btn19 btnCustom btn_teste"><p>t</p></button>
+                    <button onclick="caracter('letra', 'y')" class="btn20 btnCustom btn_teste"><p>y</p></button>
+                    <button onclick="caracter('letra', 'u')" class="btn21 btnCustom btn_teste"><p>u</p></button>
+                    <button onclick="caracter('letra', 'i')" class="btn22 btnCustom btn_teste"><p>i</p></button>
+                    <button onclick="caracter('letra', 'o')" class="btn23 btnCustom btn_teste"><p>o</p></button>
+                    <button onclick="caracter('letra', 'p')" class="btn24 btnCustom btn_teste"><p>p</p></button>
+                    <button onclick="caracter('letra', '')" class="btn25 btnCustom btn_teste"><p>´</p></button>
+                    <button onclick="caracter('letra', '[')" class="btn26 btnCustom btn_teste"><p>[</p></button>
+                </div>
+
+                <div class="line3">
+                    <button onclick="caracter('letra', '')" class="btn27 btnCustom btn_teste btnHome"><p><i class="fas fa-home"></i></p></button>
+                    <button onclick="caracter('letra', 'a')"class="btn28 btnCustom btn_teste"><p>a</p></button>
+                    <button onclick="caracter('letra', 's')" class="btn29 btnCustom btn_teste"><p>s</p></button>
+                    <button onclick="caracter('letra', 'd')" class="btn30 btnCustom btn_teste"><p>d</p></button>
+                    <button onclick="caracter('letra', 'f')" class="btn31 btnCustom btn_teste"><p>f</p></button>
+                    <button onclick="caracter('letra', 'g')" class="btn32 btnCustom btn_teste"><p>g</p></button>
+                    <button onclick="caracter('letra', 'h')" class="btn33 btnCustom btn_teste"><p>h</p></button>
+                    <button onclick="caracter('letra', 'j')" class="btn34 btnCustom btn_teste"><p>j</p></button>
+                    <button onclick="caracter('letra', 'k')" class="btn35 btnCustom btn_teste"><p>k</p></button>
+                    <button onclick="caracter('letra', 'l')" class="btn36 btnCustom btn_teste"><p>l</p></button>
+                    <button onclick="caracter('letra', 'ç')" class="btn37 btnCustom btn_teste"><p>ç</p></button>
+                    <button onclick="caracter('letra', '')" class="btn38 btnCustom btn_teste"><p>~</p></button>
+                    <button onclick="caracter('letra', ']')" class="btn39 btnCustom btn_teste"><p>]</p></button>
+                    
+                </div>
+
+                <div class="line4">
+                    <button onclick="caracter('letra', 'p')" class="btn40 btnCustom btn_teste btnShift"><p><i class="fas fa-arrow-up"></i></p></button>
+                    <button onclick="caracter('letra', '')" class="btn41 btnCustom btn_teste"><p>\</p></button>
+                    <button onclick="caracter('letra', 'z')" class="btn42 btnCustom btn_teste"><p>z</p></button>
+                    <button onclick="caracter('letra', 'x')" class="btn43 btnCustom btn_teste"><p>x</p></button>
+                    <button onclick="caracter('letra', 'c')" class="btn44 btnCustom btn_teste"><p>c</p></button>
+                    <button onclick="caracter('letra', 'v')" class="btn45 btnCustom btn_teste"><p>v</p></button>
+                    <button onclick="caracter('letra', 'b')" class="btn46 btnCustom btn_teste"><p>b</p></button>
+                    <button onclick="caracter('letra', 'n')" class="btn47 btnCustom btn_teste"><p>n</p></button>
+                    <button onclick="caracter('letra', 'm')" class="btn48 btnCustom btn_teste"><p>m</p></button>
+                    <button onclick="caracter('letra', ',')" class="btn49 btnCustom btn_teste"><p>,</p></button>
+                    <button onclick="caracter('letra', '.')" class="btn50 btnCustom btn_teste"><p>.</p></button>
+                    <button onclick="caracter('letra', ';')" class="btn51 btnCustom btn_teste"><p>;</p></button>
+                    <button onclick="caracter('letra', '')" class="btn52 btnCustom btn_teste bntShift2"><p><i class="fas fa-arrow-up"></i></p></button>
+                </div>
+
+                <div class="line5">
+                    <button onclick="caracter('caracterEspecial', '')" class=" btn53 btnCustom btn_teste"><p>CRTL</p></button>
+                    <button onclick="caracter('caracterEspecial', '...')" class="btn54 btnCustom btn_teste btnSpace"><p>.</p></button>
+                    <button class="btn55 btnCustom btn_teste"><p>Alt</p></button>
+
+                </div>
+            </div>
+        </div>
+        
+        <script src="./index.js"></script>
+    </body>
+</html>
